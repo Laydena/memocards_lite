@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/memocards_lite.git/static/css/main.dd8a6cf9.css",
-    "main.js": "/memocards_lite.git/static/js/main.84badc0a.js",
-    "static/media/main-logo.svg": "/memocards_lite.git/static/media/main-logo.29d1c50714205a11973bee6ce73f9bb0.svg",
-    "index.html": "/memocards_lite.git/index.html",
-    "main.dd8a6cf9.css.map": "/memocards_lite.git/static/css/main.dd8a6cf9.css.map",
-    "main.84badc0a.js.map": "/memocards_lite.git/static/js/main.84badc0a.js.map"
+    "main.css": "/memocards_lite/static/css/main.dd8a6cf9.css",
+    "main.js": "/memocards_lite/static/js/main.71c70e5e.js",
+    "static/media/main-logo.svg": "/memocards_lite/static/media/main-logo.29d1c50714205a11973bee6ce73f9bb0.svg",
+    "index.html": "/memocards_lite/index.html",
+    "main.dd8a6cf9.css.map": "/memocards_lite/static/css/main.dd8a6cf9.css.map",
+    "main.71c70e5e.js.map": "/memocards_lite/static/js/main.71c70e5e.js.map"
   },
   "entrypoints": [
     "static/css/main.dd8a6cf9.css",
-    "static/js/main.84badc0a.js"
+    "static/js/main.71c70e5e.js"
   ]
 }
