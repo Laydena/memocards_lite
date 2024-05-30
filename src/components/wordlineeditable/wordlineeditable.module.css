@@ -1,0 +1,46 @@
+@value colors: "../variables.css";
+@value customGreen, customYellow, customOrange, customRose from colors;
+
+.line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 150px;
+
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 10px 20px;
+
+    text-transform: uppercase;
+    font-size: larger;
+    font-weight: 400;
+
+    background-color: rgb(254, 250, 184);
+
+}
+
+.span_editable {
+    background-color: aliceblue;
+    border: 2px solid customOrange;
+    width: 170px;
+    text-align: left;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+.btn {
+    border: 0;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.btn:hover {
+    box-shadow: 0 0 10px rgba(116, 116, 116, 0.5);
+}

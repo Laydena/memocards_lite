@@ -1,0 +1,15 @@
+@value colors: "../variables.css";
+@value customGreen, customYellow, customOrange from colors;
+
+header {
+    background-color: customGreen;
+    padding: 20px 30px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center
+}
