@@ -11,7 +11,8 @@
                 "russian": "яблоко",
                 "transcription": "[æpl]",
                 "sound": "",
-                "image": "/img/fruits-covers/apple.jpg"
+                "image": "/img/fruits-covers/apple.jpg",
+                "boolean": true
             },
             {
                 "id": "150001",
@@ -19,7 +20,8 @@
                 "russian": "киви",
                 "transcription": "[kiːwiː]",
                 "sound": "",
-                "image": ""
+                "image": "",
+                "boolean": true
             },
             {
                 "id": "150002",
@@ -27,7 +29,8 @@
                 "russian": "банан",
                 "transcription": "[bəˈnɑːnə]",
                 "sound": "",
-                "image": ""
+                "image": "",
+                "boolean": false
             },
             {
                 "id": "150003",
@@ -35,7 +38,8 @@
                 "russian": "груша",
                 "transcription": "[peə]",
                 "sound": "",
-                "image": ""
+                "image": "",
+                "boolean": true
             },
             {
                 "id": "150004",
@@ -43,7 +47,8 @@
                 "russian": "персик",
                 "transcription": "[piːʧ]",
                 "sound": "",
-                "image": ""
+                "image": "",
+                "boolean": true
             },
             {
                 "id": "150004",
@@ -51,7 +56,8 @@
                 "russian": "мандарин",
                 "transcription": "[tænʤəˈriːn]",
                 "sound": "",
-                "image": ""
+                "image": "",
+                "boolean": true
             }
         ]
     }

@@ -6,7 +6,7 @@ export default function AddWordBtn() {
 
         <button className={styles.add_btn} >
             <img src={plusIcon} className={styles.add_icon} alt='иконка добавить слово'></img>
-            Добавить слово
+            &nbsp;&nbsp;Добавить слово
         </button >
 
     )
