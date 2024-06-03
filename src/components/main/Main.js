@@ -1,18 +1,24 @@
 import Chapter from '../chapter/Chapter.js';
 import Wordslist from '../wordsList/WordsList.js';
-import Card from '../card/Card.js';
-import data from '../../data/Data.json';
+import Learning from '../learning/Learning.js';
+
+
 
 
 export default function Main() {
+
+
+
     return (
         <main className='main'>
             <Chapter />
             <Wordslist />
+            <Learning />
 
-            < Card
-                english={data[0].words[0].english}
-            />
+
+
+
+
 
 
         </main>

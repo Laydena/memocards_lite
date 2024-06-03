@@ -1,4 +1,4 @@
-import WordlineView from '../wordline/Wordline.js';
+import Wordline from '../wordline/Wordline.js';
 import data from '../../data/Data.json';
 import WordlineEditable from '../wordlineeditable/WordlineEditable.js';
 import AddWordBtn from '../addWordBtn/AddWordBtn.js';
@@ -14,7 +14,7 @@ export default function Wordslist() {
                     data[0].words.map((item, index) => (
 
                         item.boolean
-                            ? < WordlineView
+                            ? < Wordline
                                 id={item.id}
                                 english={item.english}
                                 russian={item.russian}

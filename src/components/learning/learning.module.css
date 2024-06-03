@@ -1,0 +1,13 @@
+.card_button {
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
+    box-shadow: 5px 5px 10px rgb(168, 114, 144);
+
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

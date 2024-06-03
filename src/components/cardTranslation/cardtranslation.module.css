@@ -18,12 +18,7 @@
     background-color: customRose;
 }
 
-.card_englsh {
-
+.card_russian {
+    color: customOrange;
     font-size: 48px;
-}
-
-.card_transcription {
-
-    font-size: 36px;
 }
