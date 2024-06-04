@@ -1,12 +1,7 @@
 [
-    {
-        "id": "1000",
-        "name": "Фрукты",
-        "link": "fruits",
-        "image": "/img/fruits-cover.jpg",
-        "words": [
             {
                 "id": "150000",
+                "theme": "фрукты",
                 "english": "apple",
                 "russian": "яблоко",
                 "transcription": "[æpl]",
@@ -16,6 +11,7 @@
             },
             {
                 "id": "150001",
+                "theme": "фрукты",
                 "english": "kiwi",
                 "russian": "киви",
                 "transcription": "[kiːwiː]",
@@ -25,6 +21,7 @@
             },
             {
                 "id": "150002",
+                "theme": "фрукты",
                 "english": "banana",
                 "russian": "банан",
                 "transcription": "[bəˈnɑːnə]",
@@ -34,6 +31,7 @@
             },
             {
                 "id": "150003",
+                "theme": "фрукты",
                 "english": "pear",
                 "russian": "груша",
                 "transcription": "[peə]",
@@ -43,6 +41,7 @@
             },
             {
                 "id": "150004",
+                "theme": "фрукты",
                 "english": "peach",
                 "russian": "персик",
                 "transcription": "[piːʧ]",
@@ -52,6 +51,7 @@
             },
             {
                 "id": "150004",
+                "theme": "фрукты",
                 "english": "tangerine",
                 "russian": "мандарин",
                 "transcription": "[tænʤəˈriːn]",
@@ -59,6 +59,5 @@
                 "image": "",
                 "boolean": true
             }
-        ]
-    }
+        
 ]

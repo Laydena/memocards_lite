@@ -1,12 +1,10 @@
-import LeftArrow from '../arrow/LeftArrow.js';
-import RightArrow from '../arrow/RightArrow.js';
+// import LeftArrow from '../arrow/LeftArrow.js';
+// import RightArrow from '../arrow/RightArrow.js';
 import Card from '../card/Card.js';
 import CardTranslation from '../cardTranslation/CardTranslation.js';
 import data from '../../data/Data.json';
 import React, { useState } from 'react';
 import style from './learning.module.css';
-
-
 
 
 export default function Learning() {
@@ -17,25 +15,48 @@ export default function Learning() {
         setCardTurnoverClicked(!cardTurnoverClicked)
     }
 
+
+    let [wordIndex, setWordIndex] = useState(0);
+
+    let activeCard = data[wordIndex];
+
+
+    const handleNextCard = () => {
+        wordIndex < data.length - 1
+            ? setWordIndex(wordIndex++)
+            : setWordIndex(wordIndex = 0)
+        setCardTurnoverClicked(false);
+
+
+    }
+    const handlePreviousCard = () => {
+        wordIndex > 0
+            ? setWordIndex(wordIndex--)
+            : setWordIndex(data.length - 1)
+        setCardTurnoverClicked(false);
+
+    }
+
     return (
         <div className={style.wrapper}>
-            <LeftArrow />
+            <button onClick={handlePreviousCard}>пред</button>
+
             {cardTurnoverClicked
                 ?
                 <button className={style.card_button} onClick={handleCardTurnoverClicked}>
                     < CardTranslation
-                        russian={data[0].words[0].russian}
+                        russian={activeCard.russian}
                     />
                 </button>
                 :
                 <button className={style.card_button} onClick={handleCardTurnoverClicked}>
                     < Card
-                        english={data[0].words[0].english}
-                        transcription={data[0].words[0].transcription}
+                        english={activeCard.english}
+                        transcription={activeCard.transcription}
                     />
                 </button>
             }
-        <RightArrow />
+            <button onClick={handleNextCard}>след</button>
 
 
         </div>

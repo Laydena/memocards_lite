@@ -5,13 +5,13 @@ import AddWordBtn from '../addWordBtn/AddWordBtn.js';
 import style from './wordslist.module.css';
 
 export default function Wordslist() {
-    // console.log(data[0].words);
+    console.log(data);
 
     return (
         <>
             <div className="cards-container" id="cards-container">
                 {
-                    data[0].words.map((item, index) => (
+                    data.map((item, index) => (
 
                         item.boolean
                             ? < Wordline
