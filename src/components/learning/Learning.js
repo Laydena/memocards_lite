@@ -15,31 +15,27 @@ export default function Learning() {
         setCardTurnoverClicked(!cardTurnoverClicked)
     }
 
-
     let [wordIndex, setWordIndex] = useState(0);
 
     let activeCard = data[wordIndex];
 
-
     const handleNextCard = () => {
-        wordIndex < data.length - 1
+        wordIndex <= data.length - 1
             ? setWordIndex(wordIndex++)
             : setWordIndex(wordIndex = 0)
-        setCardTurnoverClicked(false);
-
+        setCardTurnoverClicked(false)
 
     }
     const handlePreviousCard = () => {
-        wordIndex > 0
+        wordIndex >= 0
             ? setWordIndex(wordIndex--)
             : setWordIndex(data.length - 1)
-        setCardTurnoverClicked(false);
-
+        setCardTurnoverClicked(false)
     }
 
     return (
         <div className={style.wrapper}>
-            <button onClick={handlePreviousCard}>пред</button>
+            <button className={style.arrow_button} onClick={handlePreviousCard}>пред</button>
 
             {cardTurnoverClicked
                 ?
@@ -56,7 +52,7 @@ export default function Learning() {
                     />
                 </button>
             }
-            <button onClick={handleNextCard}>след</button>
+            <button className={style.arrow_button} onClick={handleNextCard}>след</button>
 
 
         </div>
