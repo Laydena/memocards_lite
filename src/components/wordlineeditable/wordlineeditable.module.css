@@ -20,27 +20,27 @@
 
 }
 
-.span_editable {
+.input_editable {
     background-color: aliceblue;
     border: 2px solid customOrange;
     width: 170px;
     text-align: left;
+    font-weight: 600;
+
+    padding: 5px;
 }
 
-.icons {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+.english {
+    width: 170px;
+    text-align: left;
 }
 
-
-.btn {
-    border: 0;
-    border-radius: 15px;
-    cursor: pointer;
-    background-color: transparent;
+.russian {
+    width: 170px;
+    text-align: left;
 }
 
-.btn:hover {
-    box-shadow: 0 0 10px rgba(116, 116, 116, 0.5);
+.transcription {
+    width: 170px;
+    text-align: left;
 }

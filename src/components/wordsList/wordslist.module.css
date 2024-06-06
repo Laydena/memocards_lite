@@ -1,6 +1,38 @@
+@value colors: "../variables.css";
+@value customGreen, customYellow, customOrange, customRose from colors;
+
+.line {
+    display: flex;
+    flex-direction: row;
+    background-color: customRose;
+}
+
+.line_editable {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(254, 250, 184);
+}
+
 .center {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: 20px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.btn {
+    border: 0;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.btn:hover {
+    box-shadow: 0 0 10px rgba(116, 116, 116, 0.5);
 }

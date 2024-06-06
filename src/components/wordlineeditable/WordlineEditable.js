@@ -1,32 +1,42 @@
 import styles from './wordlineeditable.module.css';
-import saveIcon from '../../assets/images/icons/save-icon.png';
-import cancelIcon from '../../assets/images/icons/cancel-icon.png';
+
+import { useState } from 'react';
 
 
 export default function WordlineEditable(props) {
+    const [inputEnglishValue, setInputEnglishValue] = useState(`${props.english}`)
+    const handleChangeInputEnglishValue = (event) => {
+        setInputEnglishValue(event.target.value)
+    }
+
+    const [inputTranscriptionValue, setInputTranscriptionValue] = useState(`${props.transcription}`)
+    const handleChangeInputTranscriptionValue = (event) => {
+        setInputTranscriptionValue(event.target.value)
+    }
+
+    const [inputRussianValue, setInputRussianValue] = useState(`${props.russian}`)
+    const handleChangeInputRussianValue = (event) => {
+        setInputRussianValue(event.target.value)
+    }
+
     return (
         <div className={styles.line}>
 
 
-            <div className={styles.span_editable} contenteditable="true">
-                <span >{props.english}</span >
+            <div className={styles.english}>
+                <input className={styles.input_editable} type='text' value={inputEnglishValue} onChange={handleChangeInputEnglishValue} />
             </div>
-            <div className={styles.span_editable} contenteditable="true">
-                <span>{props.transcription}</span>
-            </div>
-            <div className={styles.span_editable} contenteditable="true">
-                <span>{props.russian}</span>
-            </div>
+            <div className={styles.transcription}>
 
-            <div className={styles.icons}>
-                <button className={styles.btn}>
-                    <img src={saveIcon} alt='иконка сохранить'></img>
-                </button>
-                <button className={styles.btn}>
-                    <img src={cancelIcon} alt='иконка отменить изменения'></img>
-                </button>
+                <input className={styles.input_editable} type='text' value={inputTranscriptionValue} onChange={handleChangeInputTranscriptionValue} />
 
             </div>
+            <div className={styles.russian}>
+                <input className={styles.input_editable} type='text' value={inputRussianValue} onChange={handleChangeInputRussianValue} />
+                {/* <span>{props.russian}</span> */}
+            </div>
+
+
 
 
 

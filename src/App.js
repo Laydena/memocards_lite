@@ -1,6 +1,7 @@
-import './App.css';
+// import './App.css';
 import Header from '../src/components/header/Header.js';
 import Main from './components/main/Main.js';
+import './normalize.css'
 
 function App() {
   return (

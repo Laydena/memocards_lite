@@ -20,11 +20,6 @@
 
 }
 
-.icons {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
 
 .english {
     width: 170px;
@@ -39,15 +34,4 @@
 .transcription {
     width: 170px;
     text-align: left;
-}
-
-.btn {
-    border: 0;
-    border-radius: 15px;
-    cursor: pointer;
-    background-color: transparent;
-}
-
-.btn:hover {
-    box-shadow: 0 0 10px rgba(116, 116, 116, 0.5);
 }

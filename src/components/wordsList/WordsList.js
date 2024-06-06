@@ -4,8 +4,20 @@ import WordlineEditable from '../wordlineeditable/WordlineEditable.js';
 import AddWordBtn from '../addWordBtn/AddWordBtn.js';
 import style from './wordslist.module.css';
 
+import editIcon from '../../assets/images/icons/edit-icon.png';
+import deleteIcon from '../../assets/images/icons/delete-icon.png';
+import saveIcon from '../../assets/images/icons/save-icon.png';
+import cancelIcon from '../../assets/images/icons/cancel-icon.png';
+import { useState } from 'react';
+
 export default function Wordslist() {
-    console.log(data);
+    // console.log(data[1]);
+
+    const [lineEditClicked, setLineEditClicked] = useState(false)
+
+    const handleLineEditClicked = () => {
+        setLineEditClicked(!lineEditClicked)
+    }
 
     return (
         <>
@@ -13,20 +25,44 @@ export default function Wordslist() {
                 {
                     data.map((item, index) => (
 
-                        item.boolean
-                            ? < Wordline
-                                id={item.id}
-                                english={item.english}
-                                russian={item.russian}
-                                transcription={item.transcription}
-                                key={index} />
-                            : <WordlineEditable
-                                id={item.id}
-                                english={item.english}
-                                russian={item.russian}
-                                transcription={item.transcription}
-                                image={item.image}
-                                key={index} />
+                        lineEditClicked
+                            ? <div className={style.line_editable}>
+                                <WordlineEditable
+                                    id={item.id}
+                                    english={item.english}
+                                    russian={item.russian}
+                                    transcription={item.transcription}
+                                    image={item.image}
+                                    key={index} />
+                                <div className={style.icons}>
+                                    <button className={style.btn}>
+                                        <img src={saveIcon} alt='иконка сохранить'></img>
+                                    </button>
+                                    <button className={style.btn}>
+                                        <img src={cancelIcon} alt='иконка отменить изменения'></img>
+                                    </button>
+
+                                </div>
+                            </div>
+
+                            :
+
+                            <div className={style.line}>
+                                < Wordline
+                                    id={item.id}
+                                    english={item.english}
+                                    russian={item.russian}
+                                    transcription={item.transcription}
+                                    key={index} />
+                                <div className={style.icons}>
+                                    <button className={style.btn} onClick={handleLineEditClicked}>
+                                        <img src={editIcon} alt='иконка редактировать'></img>
+                                    </button>
+                                    <button className={style.btn}>
+                                        <img src={deleteIcon} alt='иконка удалить'></img>
+                                    </button>
+                                </div>
+                            </div>
 
 
                     ))
