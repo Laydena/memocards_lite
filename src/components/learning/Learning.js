@@ -15,21 +15,21 @@ export default function Learning() {
         setCardTurnoverClicked(!cardTurnoverClicked)
     }
 
-    let [wordIndex, setWordIndex] = useState(0);
+    let [selectedCardIndex, setSelectedCardIndex] = useState(0);
 
-    let activeCard = data[wordIndex];
+    let activeCard = data[selectedCardIndex];
 
     const handleNextCard = () => {
-        wordIndex <= data.length - 1
-            ? setWordIndex(wordIndex++)
-            : setWordIndex(wordIndex = 0)
+        selectedCardIndex <= data.length - 1
+            ? setSelectedCardIndex(selectedCardIndex++)
+            : setSelectedCardIndex(selectedCardIndex = 0)
         setCardTurnoverClicked(false)
 
     }
     const handlePreviousCard = () => {
-        wordIndex >= 0
-            ? setWordIndex(wordIndex--)
-            : setWordIndex(data.length - 1)
+        selectedCardIndex >= 0
+            ? setSelectedCardIndex(selectedCardIndex--)
+            : setSelectedCardIndex(data.length - 1)
         setCardTurnoverClicked(false)
     }
 

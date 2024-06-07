@@ -13,10 +13,10 @@ import { useState } from 'react';
 export default function Wordslist() {
     // console.log(data[1]);
 
-    const [lineEditClicked, setLineEditClicked] = useState(false)
+    const [editClicked, setEditClicked] = useState(false)
 
-    const handleLineEditClicked = () => {
-        setLineEditClicked(!lineEditClicked)
+    const handleEditClicked = () => {
+        setEditClicked(!editClicked)
     }
 
     return (
@@ -25,8 +25,9 @@ export default function Wordslist() {
                 {
                     data.map((item, index) => (
 
-                        lineEditClicked
-                            ? <div className={style.line_editable} key={index}>
+                        editClicked //проверяем нажата ли кнопка редактирования
+                            ?
+                            <div className={style.line_editable} key={index}>
                                 <WordlineEditable
                                     {...item} />
                                 <div className={style.icons}>
@@ -41,12 +42,11 @@ export default function Wordslist() {
                             </div>
 
                             :
-
                             <div className={style.line} key={index}>
                                 < Wordline
                                     key={item.id} {...item} />
                                 <div className={style.icons}>
-                                    <button className={style.btn} onClick={handleLineEditClicked}>
+                                    <button className={style.btn} onClick={handleEditClicked}>
                                         <img src={editIcon} alt='иконка редактировать'></img>
                                     </button>
                                     <button className={style.btn}>
