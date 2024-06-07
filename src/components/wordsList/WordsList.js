@@ -26,14 +26,9 @@ export default function Wordslist() {
                     data.map((item, index) => (
 
                         lineEditClicked
-                            ? <div className={style.line_editable}>
+                            ? <div className={style.line_editable} key={index}>
                                 <WordlineEditable
-                                    id={item.id}
-                                    english={item.english}
-                                    russian={item.russian}
-                                    transcription={item.transcription}
-                                    image={item.image}
-                                    key={index} />
+                                    {...item} />
                                 <div className={style.icons}>
                                     <button className={style.btn}>
                                         <img src={saveIcon} alt='иконка сохранить'></img>
@@ -47,13 +42,9 @@ export default function Wordslist() {
 
                             :
 
-                            <div className={style.line}>
+                            <div className={style.line} key={index}>
                                 < Wordline
-                                    id={item.id}
-                                    english={item.english}
-                                    russian={item.russian}
-                                    transcription={item.transcription}
-                                    key={index} />
+                                    key={item.id} {...item} />
                                 <div className={style.icons}>
                                     <button className={style.btn} onClick={handleLineEditClicked}>
                                         <img src={editIcon} alt='иконка редактировать'></img>
