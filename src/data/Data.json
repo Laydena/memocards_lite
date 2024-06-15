@@ -1,63 +1,62 @@
 [
-            {
-                "id": "150000",
-                "theme": "фрукты",
-                "english": "apple",
-                "russian": "яблоко",
-                "transcription": "[æpl]",
-                "sound": "",
-                "image": "/img/fruits-covers/apple.jpg",
-                "boolean": true
-            },
-            {
-                "id": "150001",
-                "theme": "фрукты",
-                "english": "kiwi",
-                "russian": "киви",
-                "transcription": "[kiːwiː]",
-                "sound": "",
-                "image": "",
-                "boolean": true
-            },
-            {
-                "id": "150002",
-                "theme": "фрукты",
-                "english": "banana",
-                "russian": "банан",
-                "transcription": "[bəˈnɑːnə]",
-                "sound": "",
-                "image": "",
-                "boolean": false
-            },
-            {
-                "id": "150003",
-                "theme": "фрукты",
-                "english": "pear",
-                "russian": "груша",
-                "transcription": "[peə]",
-                "sound": "",
-                "image": "",
-                "boolean": true
-            },
-            {
-                "id": "150004",
-                "theme": "фрукты",
-                "english": "peach",
-                "russian": "персик",
-                "transcription": "[piːʧ]",
-                "sound": "",
-                "image": "",
-                "boolean": true
-            },
-            {
-                "id": "150004",
-                "theme": "фрукты",
-                "english": "tangerine",
-                "russian": "мандарин",
-                "transcription": "[tænʤəˈriːn]",
-                "sound": "",
-                "image": "",
-                "boolean": true
-            }
-        
+    {
+        "id": "150000",
+        "theme": "фрукты",
+        "english": "apple",
+        "russian": "яблоко",
+        "transcription": "[æpl]",
+        "sound": "",
+        "image": "/img/fruits-covers/apple.jpg",
+        "boolean": true
+    },
+    {
+        "id": "150001",
+        "theme": "фрукты",
+        "english": "kiwi",
+        "russian": "киви",
+        "transcription": "[kiːwiː]",
+        "sound": "",
+        "image": "",
+        "boolean": true
+    },
+    {
+        "id": "150002",
+        "theme": "фрукты",
+        "english": "banana",
+        "russian": "банан",
+        "transcription": "[bəˈnɑːnə]",
+        "sound": "",
+        "image": "",
+        "boolean": false
+    },
+    {
+        "id": "150003",
+        "theme": "фрукты",
+        "english": "pear",
+        "russian": "груша",
+        "transcription": "[peə]",
+        "sound": "",
+        "image": "",
+        "boolean": true
+    },
+    {
+        "id": "150004",
+        "theme": "фрукты",
+        "english": "peach",
+        "russian": "персик",
+        "transcription": "[piːʧ]",
+        "sound": "",
+        "image": "",
+        "boolean": true
+    },
+    {
+        "id": "150005",
+        "theme": "фрукты",
+        "english": "tangerine",
+        "russian": "мандарин",
+        "transcription": "[tænʤəˈriːn]",
+        "sound": "",
+        "image": "",
+        "boolean": true
+    }
 ]

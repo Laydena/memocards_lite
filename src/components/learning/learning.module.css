@@ -1,8 +1,14 @@
+@value colors: "../variables.css";
+@value customGreen, customYellow, customOrange, customRose from colors;
+
+
 .card_button {
     border: 0;
     cursor: pointer;
     background-color: transparent;
-    box-shadow: 5px 5px 10px rgb(168, 114, 144);
+    box-shadow: 7px 5px 9px 0px rgb(168, 114, 144);
+    padding-block: 0px;
+    padding-inline: 0px;
 
 }
 
@@ -13,6 +19,17 @@
 }
 
 .arrow_button {
+    border: 0;
     cursor: pointer;
+    background-color: transparent;
+    margin: 50px;
 
+}
+
+.arrow_button:hover {
+    background-color: customRose;
+}
+
+.arrow_button:active {
+    background-color: customYellow;
 }

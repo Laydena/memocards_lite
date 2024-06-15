@@ -1,9 +1,11 @@
 // import LeftArrow from '../arrow/LeftArrow.js';
 // import RightArrow from '../arrow/RightArrow.js';
+import leftArrow from '../../assets/images/icons/left-arrow.png';
+import rightArrow from '../../assets/images/icons/right-arrow.png';
 import Card from '../card/Card.js';
 import CardTranslation from '../cardTranslation/CardTranslation.js';
 import data from '../../data/Data.json';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import style from './learning.module.css';
 
 
@@ -35,7 +37,9 @@ export default function Learning() {
 
     return (
         <div className={style.wrapper}>
-            <button className={style.arrow_button} onClick={handlePreviousCard}>пред</button>
+            <button className={style.arrow_button} onClick={handlePreviousCard}>
+                <img src={leftArrow} alt="предыдущее слово" />
+            </button>
 
             {cardTurnoverClicked
                 ?
@@ -52,7 +56,9 @@ export default function Learning() {
                     />
                 </button>
             }
-            <button className={style.arrow_button} onClick={handleNextCard}>след</button>
+            <button className={style.arrow_button} onClick={handleNextCard}>
+                <img src={rightArrow} alt="следующее слово" />
+            </button>
 
 
         </div>

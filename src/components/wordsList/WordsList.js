@@ -11,60 +11,52 @@ import cancelIcon from '../../assets/images/icons/cancel-icon.png';
 import { useState } from 'react';
 
 export default function Wordslist() {
-    // console.log(data[1]);
+    const [editStates, setEditStates] = useState({});
 
-    const [editClicked, setEditClicked] = useState(false)
-
-    const handleEditClicked = () => {
-        setEditClicked(!editClicked)
-    }
+    const handleLineEditClicked = (id) => {
+        setEditStates((prevState) => ({
+            ...prevState,
+            [id]: !prevState[id],
+        }));
+    };
 
     return (
         <>
             <div className="cards-container" id="cards-container">
-                {
-                    data.map((item, index) => (
-
-                        editClicked //проверяем нажата ли кнопка редактирования
-                            ?
-                            <div className={style.line_editable} key={index}>
-                                <WordlineEditable
-                                    {...item} />
+                {data.map((item, id) =>
+                    editStates[item.id]
+                        ? (
+                            <div className={style.line_editable} key={id}>
+                                <WordlineEditable {...item} />
                                 <div className={style.icons}>
                                     <button className={style.btn}>
-                                        <img src={saveIcon} alt='иконка сохранить'></img>
+                                        <img src={saveIcon} alt="иконка сохранить"></img>
                                     </button>
-                                    <button className={style.btn}>
-                                        <img src={cancelIcon} alt='иконка отменить изменения'></img>
-                                    </button>
-
-                                </div>
-                            </div>
-
-                            :
-                            <div className={style.line} key={index}>
-                                < Wordline
-                                    key={item.id} {...item} />
-                                <div className={style.icons}>
-                                    <button className={style.btn} onClick={handleEditClicked}>
-                                        <img src={editIcon} alt='иконка редактировать'></img>
-                                    </button>
-                                    <button className={style.btn}>
-                                        <img src={deleteIcon} alt='иконка удалить'></img>
+                                    <button className={style.btn} onClick={() => handleLineEditClicked(item.id)}>
+                                        <img src={cancelIcon} alt="иконка отменить изменения"></img>
                                     </button>
                                 </div>
                             </div>
-
-
-                    ))
-                }
-
+                        )
+                        : (
+                            <div className={style.line} key={id}>
+                                <Wordline {...item} />
+                                <div className={style.icons}>
+                                    <button className={style.btn} onClick={() => handleLineEditClicked(item.id)}>
+                                        <img src={editIcon} alt="иконка редактировать"></img>
+                                    </button>
+                                    <button className={style.btn}>
+                                        <img src={deleteIcon} alt="иконка удалить"></img>
+                                    </button>
+                                </div>
+                            </div>
+                        ),
+                )}
             </div>
 
             <div className={style.center}>
                 <AddWordBtn />
             </div>
         </>
-
-    )
+    );
 }
