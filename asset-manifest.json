@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/memocards_lite/static/css/main.9c69a138.css",
+    "main.css": "/memocards_lite/static/css/main.6ea58cb8.css",
     "main.js": "/memocards_lite/static/js/main.0b963d13.js",
     "static/media/main-logo.svg": "/memocards_lite/static/media/main-logo.29d1c50714205a11973bee6ce73f9bb0.svg",
     "static/media/error-page.png": "/memocards_lite/static/media/error-page.ea31a1237d4dc7ee9b68.png",
     "index.html": "/memocards_lite/index.html",
-    "main.9c69a138.css.map": "/memocards_lite/static/css/main.9c69a138.css.map",
+    "main.6ea58cb8.css.map": "/memocards_lite/static/css/main.6ea58cb8.css.map",
     "main.0b963d13.js.map": "/memocards_lite/static/js/main.0b963d13.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c69a138.css",
+    "static/css/main.6ea58cb8.css",
     "static/js/main.0b963d13.js"
   ]
 }
