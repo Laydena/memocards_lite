@@ -21,9 +21,6 @@ header {
 }
 
 
-@value colors: "../variables.css";
-@value customYellow, customOrange from colors;
-
 .btn_learning {
     width: 270px;
     height: 70px;
