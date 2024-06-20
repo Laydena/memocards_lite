@@ -1,0 +1,11 @@
+.error {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 40px;
+
+}
+
+.title {
+    text-align: center;
+}
