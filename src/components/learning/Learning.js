@@ -22,19 +22,51 @@ export default function Learning() {
 
     let activeCard = data[selectedCardIndex];
 
-    const handleNextCard = () => {
-        selectedCardIndex <= data.length - 1
-            ? setSelectedCardIndex(selectedCardIndex++)
-            : setSelectedCardIndex(selectedCardIndex = 0)
-        setCardTurnoverClicked(false)
+    // const handleNextCard = () => {
+    //     selectedCardIndex <= data.length - 1
+    //         ? setSelectedCardIndex(selectedCardIndex++)
+    //         : setSelectedCardIndex(selectedCardIndex = 0)
+    //     setCardTurnoverClicked(false)
 
-    }
+    // }
+    // const handlePreviousCard = () => {
+    //     selectedCardIndex >= 0
+    //         ? setSelectedCardIndex(selectedCardIndex--)
+    //         : setSelectedCardIndex(data.length - 1)
+    //     setCardTurnoverClicked(false)
+    // }
+
+    const handleNextCard = () => {
+        setSelectedCardIndex((prevIndex) =>
+            prevIndex < data.length - 1
+                ?
+                prevIndex + 1
+                :
+                0
+        );
+        setCardTurnoverClicked(false);
+    };
+
     const handlePreviousCard = () => {
-        selectedCardIndex >= 0
-            ? setSelectedCardIndex(selectedCardIndex--)
-            : setSelectedCardIndex(data.length - 1)
-        setCardTurnoverClicked(false)
-    }
+        setSelectedCardIndex((prevIndex) =>
+            prevIndex > 0
+                ?
+                prevIndex - 1
+                :
+                data.length - 1
+        );
+        setCardTurnoverClicked(false);
+    };
+
+
+
+
+    // const handlePreviousCard = () => {
+    //     selectedCardIndex >= 0
+    //         ? setSelectedCardIndex(selectedCardIndex--)
+    //         : setSelectedCardIndex(data.length - 1)
+    //     setCardTurnoverClicked(false)
+    // }
 
     return (
         <>
@@ -69,5 +101,6 @@ export default function Learning() {
 
 
     )
-
 }
+
+
