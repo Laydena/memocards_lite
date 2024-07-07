@@ -22,3 +22,24 @@
     color: customOrange;
     font-size: 48px;
 }
+
+.chbx {
+    margin: 10px;
+}
+
+.fieldset {
+    margin: 10px;
+    border: 0 none;
+}
+
+.btn {
+    cursor: pointer;
+    background-color: customGreen;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
+
+.btn:focus {
+    border: 1px solid green;
+}

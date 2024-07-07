@@ -33,3 +33,11 @@
 .arrow_button:active {
     background-color: customYellow;
 }
+
+.show_translateButton {
+    border: 0;
+    cursor: pointer;
+    background-color: customRose;
+    margin: 40px;
+    padding: 10px;
+}

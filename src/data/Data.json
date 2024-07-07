@@ -7,7 +7,7 @@
         "transcription": "[æpl]",
         "sound": "",
         "image": "/img/fruits-covers/apple.jpg",
-        "boolean": true
+        "isChecked": false
     },
     {
         "id": "150001",
@@ -17,7 +17,7 @@
         "transcription": "[kiːwiː]",
         "sound": "",
         "image": "",
-        "boolean": true
+        "isChecked": false
     },
     {
         "id": "150002",
@@ -27,7 +27,7 @@
         "transcription": "[bəˈnɑːnə]",
         "sound": "",
         "image": "",
-        "boolean": false
+        "isChecked": false
     },
     {
         "id": "150003",
@@ -37,7 +37,7 @@
         "transcription": "[peə]",
         "sound": "",
         "image": "",
-        "boolean": true
+        "isChecked": false
     },
     {
         "id": "150004",
@@ -47,7 +47,7 @@
         "transcription": "[piːʧ]",
         "sound": "",
         "image": "",
-        "boolean": true
+        "isChecked": false
     },
     {
         "id": "150005",
@@ -57,6 +57,6 @@
         "transcription": "[tænʤəˈriːn]",
         "sound": "",
         "image": "",
-        "boolean": true
+        "isChecked": false
     }
 ]

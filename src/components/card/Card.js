@@ -9,7 +9,9 @@ export default function Card(props) {
                     <span className={style.card_englsh}>{props.english}</span>
                     <span className={style.card_transcription}>{props.transcription}</span>
                 </div>
+
             </div>
+
 
         </>
     )
