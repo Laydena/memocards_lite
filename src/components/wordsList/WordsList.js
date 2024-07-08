@@ -27,7 +27,10 @@ export default function Wordslist() {
                     editStates[item.id]
                         ? (
                             <div className={style.line_editable} key={id}>
-                                <WordlineEditable {...item} />
+                                <WordlineEditable
+                                    english={item.english}
+                                    transcription={item.transcription}
+                                    russian={item.russian} />
                                 <div className={style.icons}>
                                     <button className={style.btn}>
                                         <img src={saveIcon} alt="иконка сохранить"></img>

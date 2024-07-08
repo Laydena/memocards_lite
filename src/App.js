@@ -4,7 +4,7 @@ import Main from './components/main/Main.js';
 import Learning from './components/learning/Learning.js';
 import MissingPage from './components/missingPage/MissingPage.js';
 import './normalize.css';
-import { HashRouter, Routes, Route, Link } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 
 function App() {
