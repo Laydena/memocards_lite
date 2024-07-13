@@ -31,14 +31,7 @@ export default function Wordslist() {
                                     english={item.english}
                                     transcription={item.transcription}
                                     russian={item.russian} />
-                                <div className={style.icons}>
-                                    <button className={style.btn}>
-                                        <img src={saveIcon} alt="иконка сохранить"></img>
-                                    </button>
-                                    <button className={style.btn} onClick={() => handleLineEditClicked(item.id)}>
-                                        <img src={cancelIcon} alt="иконка отменить изменения"></img>
-                                    </button>
-                                </div>
+
                             </div>
                         )
                         : (

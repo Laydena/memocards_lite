@@ -18,16 +18,8 @@ export default function AddWordBtn() {
             {addBtnClicked
                 ? (
                     <div className={styles.line_editable}>
-                        < WordlineEditable />
-                        <div className={styles.icons}>
-                            <button className={styles.btn}>
-                                <img src={saveIcon} alt="иконка сохранить"></img>
-                            </button>
-                            <button className={styles.btn}
-                            >
-                                <img src={cancelIcon} alt="иконка отменить изменения"></img>
-                            </button>
-                        </div>
+                        < WordlineEditable handleAddBtnClicked={handleAddBtnClicked} />
+
                     </div>)
                 : (
                     <p>Нажмите кнопку, чтобы добавить новое слово</p>)}
